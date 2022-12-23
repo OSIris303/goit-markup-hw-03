@@ -1,6 +1,21 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 0;
+}
+
 body {
     font-family: 'Roboto', 'sans-serif';
 }
+
 
 .visually-hidden {
     position: absolute;
@@ -16,17 +31,39 @@ body {
     overflow: hidden;
 }
 
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
 /*---------HEADER----------*/
+
+.address {
+    padding-right: 156px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-contacts {
+    font-size: 16px;
+    line-height: 1.50;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.header-navigation {
+    padding-left: 156px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
 .header-bg {
     background: #FFFFFF;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
                 0px 1px 1px rgba(46, 47, 66, 0.16), 
                 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-.main-bg {
-    background: #2E2F42;
 }
 
 .header-logo{
@@ -58,6 +95,7 @@ body {
 
 }
 
+
 .header-item {
     font-weight: 700;
     font-size: 16px;
@@ -74,19 +112,30 @@ body {
     color: #2E2F42;
 }
 
-.header-contacts {
-    font-size: 16px;
-    line-height: 1.50;
+.header-title {
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: #FFFFFF;
+}
+
+.main {
+    background: #2E2F42;
+    padding-top: 192px;
+    padding-bottom: 192px;
 }
 
 .main-btn {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.19;
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 32px;
+    gap: 10px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
     align-items: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
@@ -94,6 +143,12 @@ body {
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    width: 170px;
+    height: 51px;
+    left: 635px;
+    top: 432px;
+    margin-top: 48px;
+
 }
 
 .list {
@@ -104,25 +159,24 @@ body {
     text-decoration: none;
 }
 
-.header-title {
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-}
+
 /*---------MIDDLE----------*/
 
-.advantages-bg {
+.advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
     background: #FFFFFF;
 }
 
-.doing-bg {
-    background: #FFFFFF;
+.advantages-item {
+    padding-right: 24px;
 }
 
-.team-bg {
-    background: #F4F4FD;
+.doing {
+    padding-left: 156px;
+    padding-right: 156px;
+    padding-bottom: 120px;
+    background: #FFFFFF;
 }
 
 .doing-title {
@@ -132,15 +186,11 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2E2F42;
+    margin-bottom: 72px;
 }
 
-.team-title {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2E2F42;
+.doing-item {
+    margin-right: 24px;
 }
 
 .middle-list {
@@ -159,6 +209,22 @@ body {
 
 /*---------TEAM----------*/
 
+.team {
+    background: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+    margin-bottom: 72px;
+}
+
 .team-list {
     font-size: 16px;
     line-height: 1.50;
@@ -173,12 +239,28 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+.team-item {
+    margin-right: 24px;
+}
+
+.team-text {
+    font-size: 16px;
+    line-height: 1.50;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
 /*---------FOOTER----------*/
 
-.footer-bg {
+.footer {
     background: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-text {
@@ -186,6 +268,7 @@ body {
     line-height: 1.50;
     letter-spacing: 0.02em;
     color: #E7E9FC;
+    padding-top: 16px;
 }
 
 .footer-logo {
@@ -216,6 +299,15 @@ body {
 }
 
 /*---------PORTFOLIO----------*/
+
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.btn-item {
+    margin-right: 24px;
+}
 
 .portfolio-btn {
     cursor: pointer;
