@@ -407,11 +407,15 @@ body {
     height: 420px;
     left: 540px;
     top: 1224px;
-    background: #FFFFFF;
-    border: 1px solid #E7E9FC;
+
 }
 
 .works-bg {
     color: #FFFFFF;
+}
+
+.works-border {
+    background: #FFFFFF;
+    border: 1px solid #E7E9FC;
 }
 
